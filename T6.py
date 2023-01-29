@@ -3,18 +3,17 @@
 #         Примеры:
 #         [1, 2, 3, 4, 7, 9, 9] → [9]
 #         [1, 2, 4, 6, 4, 6] → [4,6]
-s = list(map(int,input().split()))
+
+
+s = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5]
 m = set(s)
 maks = 0
 s2 = []
 for el in m:
     x = s.count(el)
-    if x>maks:
+    if x > maks:
         maks = x
 for el in m:
     if s.count(el) == maks:
         s2.append(el)
 print(s2)
-
-
-
