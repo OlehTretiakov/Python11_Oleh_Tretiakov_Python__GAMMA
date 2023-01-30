@@ -48,7 +48,7 @@ print("\n","-"*20,"\n")
 # input: timestamp (float)
 # output: timestamp (float)
 
-# Решил двумя способами
+# Решил двумя способами тест 1675080873
 def get_to_past(n):
     today = datetime.datetime.fromtimestamp(n)
     two_weeks_ago = today - datetime.timedelta(weeks=2)
