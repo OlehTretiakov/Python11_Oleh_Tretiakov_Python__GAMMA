@@ -49,15 +49,16 @@ print("\n","-"*20,"\n")
 # output: timestamp (float)
 
 # Решил двумя способами тест 1675080873
+# Перекручено в решении потому что невнимательно прочитал задание
 def get_to_past(n):
     today = datetime.datetime.fromtimestamp(n)
     two_weeks_ago = today - datetime.timedelta(weeks=2)
-    return two_weeks_ago
+    return two_weeks_ago.timestamp()
 n = float(input())
 print(get_to_past(n))
 def get_to_past(x):
     two_weeks_ago =datetime.datetime.fromtimestamp(x - (14*24*3600))
-    return two_weeks_ago
+    return two_weeks_ago.timestamp()
 x = float(input())
 print(get_to_past(x))
 
