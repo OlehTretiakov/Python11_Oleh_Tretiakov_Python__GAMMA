@@ -45,7 +45,7 @@ print("\n","-"*20,"\n")
 
 
 # Write a function to subtract 2 weeks from timestamp and return new timestamp
-# input: timestamp (float)
+# input: timestamp (float),
 # output: timestamp (float)
 
 # Решил двумя способами тест 1675080873
