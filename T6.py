@@ -17,3 +17,4 @@ for el in m:
     if s.count(el) == maks:
         s2.append(el)
 print(s2)
+
