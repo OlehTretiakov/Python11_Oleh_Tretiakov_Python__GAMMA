@@ -9,12 +9,12 @@ with open("2019.csv","r",encoding="utf8") as file:
 my_dict = {}
 for el in data:
     my_dict[el[menu.index("Social support")]] = el[1]
-print("Social support rating first ten:\n")
+print("Social support rating first eleven:\n")
 c = 1
 for k,v in sorted(my_dict.items(),reverse=True):
     print(f"{c}. {v} - {k}")
     c+=1
-    if c==11:
+    if c==12:
         break
 
 
